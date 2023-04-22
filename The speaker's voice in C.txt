@@ -1,0 +1,38 @@
+﻿#include <stdio.h>
+#include <windows.h>
+
+int main()
+{
+    int ferecans , sound , sleep , i , j;
+
+    printf("\nEnter a frequency: "); //تنطیم فرکانس صدا
+    scanf("%d", &ferecans);
+
+    printf("\nEnter a sound: "); //تنطیم مدت زمان
+    scanf("%d", &sound);
+
+    printf("\nEnter a number for count: "); //تنطیم شمارش بوق
+    scanf("%d", &j);
+
+    printf("\nEnter a number for Sleep: "); //تنطیم دو سی ثانیه
+    scanf("%d", &sleep);
+
+
+    for(i = 1; i <= j; i++)         //if نوشتن برنامه با
+    {
+        Beep(ferecans,sound); //تولید صدا
+        Sleep(sleep);
+    }
+
+
+    /*    int i = 1;                //while نوشتن برنامه با
+    while(i <= j)
+    {
+        Beep(ferecans , sound);
+        Sleep(sleep);
+        i++;
+    }*/
+
+
+    return 0;
+}
